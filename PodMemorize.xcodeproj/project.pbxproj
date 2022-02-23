@@ -11,7 +11,9 @@
 		21321EE327B68C2A0096688A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21321EE227B68C2A0096688A /* ContentView.swift */; };
 		21321EE527B68C2C0096688A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21321EE427B68C2C0096688A /* Assets.xcassets */; };
 		21321EE827B68C2C0096688A /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 21321EE727B68C2C0096688A /* Preview Assets.xcassets */; };
-		21E23A1E27B7446700C2C3ED /* kanji.json in Resources */ = {isa = PBXBuildFile; fileRef = 21E23A1D27B7446700C2C3ED /* kanji.json */; };
+		2132447F27B8E932004D4D4C /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132447E27B8E932004D4D4C /* ModelData.swift */; };
+		2132448327B8EA49004D4D4C /* KanjiRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2132448227B8EA49004D4D4C /* KanjiRow.swift */; };
+		21E23A1E27B7446700C2C3ED /* kanjiData.json in Resources */ = {isa = PBXBuildFile; fileRef = 21E23A1D27B7446700C2C3ED /* kanjiData.json */; };
 		21E23A2127B7A92700C2C3ED /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E23A2027B7A92700C2C3ED /* Kanji.swift */; };
 /* End PBXBuildFile section */
 
@@ -21,8 +23,10 @@
 		21321EE227B68C2A0096688A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		21321EE427B68C2C0096688A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21321EE727B68C2C0096688A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		21E23A1D27B7446700C2C3ED /* kanji.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kanji.json; sourceTree = "<group>"; };
-		21E23A2027B7A92700C2C3ED /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Kanji.swift; path = PodMemorize/Kanji.swift; sourceTree = SOURCE_ROOT; };
+		2132447E27B8E932004D4D4C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		2132448227B8EA49004D4D4C /* KanjiRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanjiRow.swift; sourceTree = "<group>"; };
+		21E23A1D27B7446700C2C3ED /* kanjiData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kanjiData.json; sourceTree = "<group>"; };
+		21E23A2027B7A92700C2C3ED /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Kanji.swift; path = PodMemorize/Model/Kanji.swift; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +59,10 @@
 		21321EDF27B68C2A0096688A /* PodMemorize */ = {
 			isa = PBXGroup;
 			children = (
-				21E23A2027B7A92700C2C3ED /* Kanji.swift */,
+				2132448127B8E9B4004D4D4C /* Model */,
+				2132448027B8E9A1004D4D4C /* Views */,
 				21E23A1F27B7571600C2C3ED /* Resources */,
 				21321EE027B68C2A0096688A /* PodMemorizeApp.swift */,
-				21321EE227B68C2A0096688A /* ContentView.swift */,
 				21321EE427B68C2C0096688A /* Assets.xcassets */,
 				21321EE627B68C2C0096688A /* Preview Content */,
 			);
@@ -73,10 +77,28 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
+		2132448027B8E9A1004D4D4C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				21321EE227B68C2A0096688A /* ContentView.swift */,
+				2132448227B8EA49004D4D4C /* KanjiRow.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		2132448127B8E9B4004D4D4C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2132447E27B8E932004D4D4C /* ModelData.swift */,
+				21E23A2027B7A92700C2C3ED /* Kanji.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		21E23A1F27B7571600C2C3ED /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				21E23A1D27B7446700C2C3ED /* kanji.json */,
+				21E23A1D27B7446700C2C3ED /* kanjiData.json */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -141,7 +163,7 @@
 			files = (
 				21321EE827B68C2C0096688A /* Preview Assets.xcassets in Resources */,
 				21321EE527B68C2C0096688A /* Assets.xcassets in Resources */,
-				21E23A1E27B7446700C2C3ED /* kanji.json in Resources */,
+				21E23A1E27B7446700C2C3ED /* kanjiData.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,7 +175,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				21321EE327B68C2A0096688A /* ContentView.swift in Sources */,
+				2132447F27B8E932004D4D4C /* ModelData.swift in Sources */,
 				21321EE127B68C2A0096688A /* PodMemorizeApp.swift in Sources */,
+				2132448327B8EA49004D4D4C /* KanjiRow.swift in Sources */,
 				21E23A2127B7A92700C2C3ED /* Kanji.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,7 +236,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -267,7 +291,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
