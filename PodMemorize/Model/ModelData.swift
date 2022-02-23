@@ -7,7 +7,7 @@
 
 import Foundation
 
-var kanjis: [Kanji] = load("KanjiData.json")
+var kanjis: [Kanji] = load("kanjiData.json")
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

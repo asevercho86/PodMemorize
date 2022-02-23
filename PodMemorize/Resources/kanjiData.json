@@ -1,24 +1,25 @@
 [
     {
         "id": 481,
-        "kanji": "",
-        "strokeCount": 1,
-        "onReading": [""],
+        "kanji": "苛",
+        "strokeCount": 8,
+        "onReading": ["か"],
         "kunReading": [""],
         "isMemorize": false,
         "isFavorite": false,
-        "meaning": [""],
-        "pronunciation": [""]
+        "meaning": ["가혹할"],
+        "pronunciation": ["가"]
     },
+    
     {
         "id": 482,
-        "kanji": "",
+        "kanji": "価",
         "strokeCount": 1,
-        "onReading": "",
-        "kunReading": "",
-        "isMemorize": "",
-        "isFavorite": "",
-        "meaning": "",
-        "pronunciation": ""
+        "onReading": ["か"],
+        "kunReading": ["あたい"],
+        "isMemorize": false,
+        "isFavorite": false,
+        "meaning": ["값"],
+        "pronunciation": ["가"]
     }
 ]

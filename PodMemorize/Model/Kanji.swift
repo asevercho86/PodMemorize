@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Kanji: Hashable, Codable{
+struct Kanji: Hashable, Codable, Identifiable {
     var id: Int
     var kanji: String
     var strokeCount: Int
@@ -15,6 +15,7 @@ struct Kanji: Hashable, Codable{
     var kunReading: Array<String>
     var isMemorize: Bool
     var isFavorite: Bool
-    
+    var meaning: Array<String>
+    var pronunciation: Array<String>
     
 }
