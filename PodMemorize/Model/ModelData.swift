@@ -6,8 +6,11 @@
 //
 
 import Foundation
+import Combine
 
-var kanjis: [Kanji] = load("kanjiData.json")
+final class ModelData: ObservableObject {
+    @Published var kanjis: [Kanji] = load("kanjiData.json")
+}
 
 func load<T: Decodable>(_ filename: String) -> T {
     let data: Data

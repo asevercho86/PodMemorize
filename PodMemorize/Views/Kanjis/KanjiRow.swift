@@ -18,11 +18,18 @@ struct KanjiRow: View {
                 .frame(width: 40.0)
             Text(kanji.onReading[0])
             Text(kanji.kunReading[0])
+            
+            if kanji.isFavorite {
+                Image(systemName: "star.fill")
+                    .foregroundColor(.yellow)
+            }
         }
     }
 }
 
 struct KanjiRow_Previews: PreviewProvider {
+    static var kanjis = ModelData().kanjis
+    
     static var previews: some View {
         Group {
             KanjiRow(kanji: kanjis[0])

@@ -6,7 +6,7 @@
         "onReading": ["か"],
         "kunReading": [""],
         "isMemorize": false,
-        "isFavorite": false,
+        "isFavorite": true,
         "meaning": ["가혹할"],
         "pronunciation": ["가"]
     },

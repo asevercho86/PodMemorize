@@ -17,6 +17,7 @@
 		213C23E127C6654F00E561C8 /* KanjiDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 213C23E027C6654F00E561C8 /* KanjiDetail.swift */; };
 		21E23A1E27B7446700C2C3ED /* kanjiData.json in Resources */ = {isa = PBXBuildFile; fileRef = 21E23A1D27B7446700C2C3ED /* kanjiData.json */; };
 		21E23A2127B7A92700C2C3ED /* Kanji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E23A2027B7A92700C2C3ED /* Kanji.swift */; };
+		21E4AA9927DA2B00005E8A32 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E4AA9827DA2B00005E8A32 /* FavoriteButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,11 +27,12 @@
 		21321EE427B68C2C0096688A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		21321EE727B68C2C0096688A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		2132447E27B8E932004D4D4C /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
-		213C23DC27C6653B00E561C8 /* KanjiRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KanjiRow.swift; path = ../KanjiRow.swift; sourceTree = "<group>"; };
+		213C23DC27C6653B00E561C8 /* KanjiRow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiRow.swift; sourceTree = "<group>"; };
 		213C23DE27C6654600E561C8 /* KanjiList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiList.swift; sourceTree = "<group>"; };
 		213C23E027C6654F00E561C8 /* KanjiDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KanjiDetail.swift; sourceTree = "<group>"; };
 		21E23A1D27B7446700C2C3ED /* kanjiData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = kanjiData.json; sourceTree = "<group>"; };
 		21E23A2027B7A92700C2C3ED /* Kanji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Kanji.swift; path = PodMemorize/Model/Kanji.swift; sourceTree = SOURCE_ROOT; };
+		21E4AA9827DA2B00005E8A32 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,9 +86,8 @@
 		2132448027B8E9A1004D4D4C /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				213C23E027C6654F00E561C8 /* KanjiDetail.swift */,
-				213C23DC27C6653B00E561C8 /* KanjiRow.swift */,
-				213C23DE27C6654600E561C8 /* KanjiList.swift */,
+				21E4AA9B27DA2BB3005E8A32 /* Helpers */,
+				21E4AA9A27DA2B8E005E8A32 /* Kanjis */,
 				21321EE227B68C2A0096688A /* ContentView.swift */,
 			);
 			path = Views;
@@ -107,6 +108,24 @@
 				21E23A1D27B7446700C2C3ED /* kanjiData.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		21E4AA9A27DA2B8E005E8A32 /* Kanjis */ = {
+			isa = PBXGroup;
+			children = (
+				213C23E027C6654F00E561C8 /* KanjiDetail.swift */,
+				213C23DC27C6653B00E561C8 /* KanjiRow.swift */,
+				213C23DE27C6654600E561C8 /* KanjiList.swift */,
+			);
+			path = Kanjis;
+			sourceTree = "<group>";
+		};
+		21E4AA9B27DA2BB3005E8A32 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				21E4AA9827DA2B00005E8A32 /* FavoriteButton.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +202,7 @@
 				21321EE327B68C2A0096688A /* ContentView.swift in Sources */,
 				2132447F27B8E932004D4D4C /* ModelData.swift in Sources */,
 				213C23DD27C6653B00E561C8 /* KanjiRow.swift in Sources */,
+				21E4AA9927DA2B00005E8A32 /* FavoriteButton.swift in Sources */,
 				21321EE127B68C2A0096688A /* PodMemorizeApp.swift in Sources */,
 				213C23E127C6654F00E561C8 /* KanjiDetail.swift in Sources */,
 				213C23DF27C6654600E561C8 /* KanjiList.swift in Sources */,

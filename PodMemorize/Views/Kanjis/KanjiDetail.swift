@@ -8,8 +8,12 @@
 import SwiftUI
 
 struct KanjiDetail: View {
+    @EnvironmentObject var modelData: ModelData
     var kanji: Kanji
     
+    var kanjiIndex: Int {
+        modelData.kanjis.firstIndex(where: { $0.id == kanji.id })!
+    }
     var body: some View {
         ScrollView{
             VStack(alignment: .leading) {
@@ -20,6 +24,7 @@ struct KanjiDetail: View {
                     Text(kanji.onReading[0])
                     Spacer()
                     Text(kanji.kunReading[0])
+                    FavoriteButton(isSet: $modelData.kanjis[kanjiIndex].isFavorite)
                 }
                 .font(.subheadline)
                 .foregroundColor(.secondary)
@@ -40,7 +45,10 @@ struct KanjiDetail: View {
 }
 
 struct KanjiDetail_Previews: PreviewProvider {
+    static let modelData = ModelData()
+
     static var previews: some View {
-        KanjiDetail(kanji: kanjis[0])
+        KanjiDetail(kanji: ModelData().kanjis[0])
+            .environmentObject(modelData)
     }
 }
